@@ -25,9 +25,26 @@ if (document.body.dataset) {
 }
 
 function dataset(node, attr, value) {
-  if (arguments.length === 3) {
+  var self = {
+    set: set,
+    get: get
+  };
+
+  function set(attr, value) {
     fn.set(node, attr, value);
-  } else {
+    return self;
+  }
+
+  function get(attr) {
     return fn.get(node, attr);
   }
+
+  if (arguments.length === 3) {
+    return set(attr, value);
+  }
+  if (arguments.length == 2) {
+    return get(attr);
+  }
+
+  return self;
 }
