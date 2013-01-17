@@ -1,23 +1,33 @@
 module.exports=dataset;
 
+/*global document*/
 
-function set(node, attr, value) {
-  if (node.dataset) {
-    node.dataset[attr] = value;
-  } else {
-    node.setAttribute('data-' + attr, value);
-  }
+var fn;
+
+if (document.body.dataset) {
+  fn = {
+    set: function(node, attr, value) {
+      node.dataset[attr] = value;
+    },
+    get: function(node, attr) {
+      return node.dataset[attr];
+    }
+  };
+} else {
+  fn = {
+    set: function(node, attr, value) {
+      node.setAttribute('data-' + attr, value);
+    },
+    get: function(node, attr) {
+      return node.getAttribute('data-' + attr);
+    }
+  };
 }
-
-function get(node, attr) {
-  return node.dataset ? node.dataset[attr] : node.getAttribute('data-' + attr);
-}
-
 
 function dataset(node, attr, value) {
   if (arguments.length === 3) {
-    set(node, attr, value);
+    fn.set(node, attr, value);
   } else {
-    return get(node, attr);
+    return fn.get(node, attr);
   }
 }
