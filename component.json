@@ -1,0 +1,13 @@
+{
+  "name": "dataset",
+  "repo": "code42day/dataset",
+  "description": "Shim for DOM dataset",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
