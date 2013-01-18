@@ -2,8 +2,11 @@
   "name": "dataset",
   "repo": "code42day/dataset",
   "description": "Shim for DOM dataset",
-  "version": "0.1.0",
-  "keywords": [],
+  "version": "0.2.0",
+  "keywords": [
+    "dom",
+    "dataset"
+  ],
   "dependencies": {},
   "development": {},
   "license": "MIT",
