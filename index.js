@@ -2,6 +2,14 @@ module.exports=dataset;
 
 /*global document*/
 
+
+// replace namesLikeThis with names-like-this
+function toDashed(name) {
+  return name.replace(/([A-Z])/g, function(u) {
+    return "-" + u.toLowerCase();
+  });
+}
+
 var fn;
 
 if (document.body.dataset) {
@@ -16,10 +24,10 @@ if (document.body.dataset) {
 } else {
   fn = {
     set: function(node, attr, value) {
-      node.setAttribute('data-' + attr, value);
+      node.setAttribute('data-' + toDashed(attr), value);
     },
     get: function(node, attr) {
-      return node.getAttribute('data-' + attr);
+      return node.getAttribute('data-' + toDashed(attr));
     }
   };
 }
