@@ -12,7 +12,7 @@ function toDashed(name) {
 
 var fn;
 
-if (document.body.dataset) {
+if (document.head.dataset) {
   fn = {
     set: function(node, attr, value) {
       node.dataset[attr] = value;
