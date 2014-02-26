@@ -17,6 +17,10 @@
 
     dataset(node, 'xxx');
 
+  To remove `data-xxx` attribute:
+
+    dataset(node).del('xxx');
+
   You can chain your `sets`:
 
   	dataset(node)
