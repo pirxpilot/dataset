@@ -1,4 +1,9 @@
 
+0.3.0 / 2014-02-26
+==================
+
+ * add dataset.del - removes attributes from dataset
+
 0.2.3 / 2014-02-24
 ==================
 
