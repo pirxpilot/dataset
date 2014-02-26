@@ -19,6 +19,9 @@ if (document.head && document.head.dataset) {
     },
     get: function(node, attr) {
       return node.dataset[attr];
+    },
+    del: function (node, attr) {
+      delete node.dataset[attr];
     }
   };
 } else {
@@ -28,6 +31,9 @@ if (document.head && document.head.dataset) {
     },
     get: function(node, attr) {
       return node.getAttribute('data-' + toDashed(attr));
+    },
+    del: function (node, attr) {
+      node.removeAttribute('data-' + toDashed(attr));
     }
   };
 }
@@ -35,11 +41,17 @@ if (document.head && document.head.dataset) {
 function dataset(node, attr, value) {
   var self = {
     set: set,
-    get: get
+    get: get,
+    del: del
   };
 
   function set(attr, value) {
     fn.set(node, attr, value);
+    return self;
+  }
+
+  function del(attr) {
+    fn.del(node, attr);
     return self;
   }
 
