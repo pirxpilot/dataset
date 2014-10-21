@@ -1,0 +1,23 @@
+{
+  "name": "dataset",
+  "version": "0.3.0",
+  "description": "Shim for DOM dataset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/code42day/dataset.git"
+  },
+  "keywords": [
+    "dom",
+    "dataset"
+  ],
+  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code42day/dataset/issues"
+  },
+  "homepage": "https://github.com/code42day/dataset"
+}
