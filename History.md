@@ -1,4 +1,10 @@
 
+0.3.1 / 2015-04-10
+==================
+
+ * make compatible with node
+ * add `package.json` file
+
 0.3.0 / 2014-02-26
 ==================
 
