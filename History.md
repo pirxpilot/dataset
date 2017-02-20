@@ -1,4 +1,10 @@
 
+0.3.2 / 2017-02-19
+==================
+
+ * transfer repo to pirxpilot
+ * add note about lack of support for SVG/MathML elements
+
 0.3.1 / 2015-04-10
 ==================
 
