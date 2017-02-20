@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ component install code42day/dataset
+    $ npm install dataset
 
 ## API
 

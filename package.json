@@ -8,16 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/code42day/dataset.git"
+    "url": "git://github.com/pirxpilot/dataset.git"
   },
   "keywords": [
     "dom",
     "dataset"
   ],
-  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "author": "Damian Krzeminski <pirxpilot@furkot.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/code42day/dataset/issues"
-  },
-  "homepage": "https://github.com/code42day/dataset"
+  "homepage": "https://github.com/pirxpilot/dataset"
 }
