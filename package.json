@@ -1,8 +1,9 @@
 {
   "name": "dataset",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Shim for DOM dataset",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
