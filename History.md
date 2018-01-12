@@ -1,4 +1,9 @@
 
+0.4.0 / 2018-01-12
+==================
+
+ * Add TypeScript typings and make a default export
+
 0.3.2 / 2017-02-19
 ==================
 
